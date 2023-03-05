@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/poc1_react/static/css/main.2a8588ea.css",
+    "main.js": "/poc1_react/static/js/main.782a2892.js",
+    "index.html": "/poc1_react/index.html",
+    "main.2a8588ea.css.map": "/poc1_react/static/css/main.2a8588ea.css.map",
+    "main.782a2892.js.map": "/poc1_react/static/js/main.782a2892.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a8588ea.css",
+    "static/js/main.782a2892.js"
+  ]
+}
