@@ -19,7 +19,20 @@ const Home = () => {
       "X-RapidAPI-Host": "anime-db.p.rapidapi.com",
     },
   };
+
   useEffect(() => {
+    const options = {
+      method: "GET",
+      params: {
+        page: "1",
+        size: "30",
+      },
+      headers: {
+        "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
+        "X-RapidAPI-Host": "anime-db.p.rapidapi.com",
+      },
+    };
+
     const fetchData = async () => {
       try {
         const response = await axios.get(
@@ -33,8 +46,9 @@ const Home = () => {
         console.log(error.message);
       }
     };
+
     fetchData();
-  }, [options]);
+  }, []);
 
   return (
     <>
