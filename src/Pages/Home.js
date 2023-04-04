@@ -19,7 +19,6 @@ const Home = () => {
       "X-RapidAPI-Host": "anime-db.p.rapidapi.com",
     },
   };
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -29,13 +28,13 @@ const Home = () => {
         );
         setData(response.data.data);
         setInitialData(response.data.data);
-        setIsLoading(true); // should be setIsLoading(false) instead of setIsLoading(true)
+        setIsLoading(false);
       } catch (error) {
         console.log(error.message);
       }
     };
     fetchData();
-  }, []);
+  }, [options]);
 
   return (
     <>
