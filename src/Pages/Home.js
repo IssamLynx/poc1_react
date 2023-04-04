@@ -8,18 +8,6 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [initialData, setInitialData] = useState([]);
 
-  const options = {
-    method: "GET",
-    params: {
-      page: "1",
-      size: "30",
-    },
-    headers: {
-      "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
-      "X-RapidAPI-Host": "anime-db.p.rapidapi.com",
-    },
-  };
-
   useEffect(() => {
     const options = {
       method: "GET",
