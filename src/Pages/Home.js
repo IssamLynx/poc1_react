@@ -29,7 +29,8 @@ const Home = () => {
         );
         setData(response.data.data);
         setInitialData(response.data.data);
-        setIsLoading(false);
+        setIsLoading(true);
+        console.log(response.data.data);
       } catch (error) {
         console.log(error.message);
       }
