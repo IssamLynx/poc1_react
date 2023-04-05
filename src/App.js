@@ -11,6 +11,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <h1>test </h1>
       <div class="w-full h-auto box-border">
         <Routes>
           <Route path="/" element={<Home />} />
